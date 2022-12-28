@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.10)
+
+project(Calge)
+
+set(CMAKE_CXX_STANDARD 11)
+
+file(GLOB SRC_FILES
+    "${PROJECT_SOURCE_DIR}/src/*.h"
+    "${PROJECT_SOURCE_DIR}/src/*.cpp")
+
+add_executable(${CMAKE_PROJECTNAME} ${SRC_FILES})
